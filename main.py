@@ -52,7 +52,7 @@ def main():
             for s in shots:
                 if a.collides_with(s):
                     log_event("asteroid_shot")
-                    pygame.sprite.Sprite.kill(a)
+                    a.split()
                     pygame.sprite.Sprite.kill(s)
         #draw updates
         for d in drawable:
